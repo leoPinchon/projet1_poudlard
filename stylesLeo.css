@@ -95,7 +95,7 @@ bgcolor: #444389 (VIOLET)  */
 /* Header Index */
 
 .index-header {
-  height: 100vh;
+  height: calc(100vh - 80px);
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.92),
@@ -108,7 +108,7 @@ bgcolor: #444389 (VIOLET)  */
   align-items: center;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
 
 
   /* barre de navigation  */
