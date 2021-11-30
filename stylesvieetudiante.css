@@ -186,7 +186,7 @@ body {
 }
 
 #navbar {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 80px;
     width: 100%;
@@ -194,8 +194,12 @@ body {
 }
 
 
-#wrap li:hover ul{
+/* #wrap li:hover ul{
     display: block;
+} */
+
+#wrap li:visited:hover ul {
+    display: none
 }
 
 
@@ -206,3 +210,6 @@ body {
     justify-content: center;
 }
 
+.sectionnav {
+    display: none;
+}
