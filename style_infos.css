@@ -1,0 +1,41 @@
+@media screen and (min-width: 1024px ) {
+    h2{
+        text-align: center;
+    }
+
+    section{        
+    
+        background-color: blue;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+        
+    
+}
+
+body {
+    background-color: #e1e3e1; 
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+h1{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;    
+}
+
+.sousSection{
+    display: flex;
+    flex-direction: column;
+    
+    height: auto;
+    width: auto;
+}
+
