@@ -1,4 +1,26 @@
 body {
-    background-color: #e1e3e1;
+    background-color: #e1e3e1; 
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+h1{
+    text-align: center;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;    
+}
+
+.sousSection{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    height: auto;
+    width: auto;
 }
 
