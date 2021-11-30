@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
-    <link rel="shortcut icon" type="image/png" href="http://y1n.fr/Favicon/HarryFavicon.ico"/> 
-    <link rel="stylesheet" href="stylesLeo.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="http://y1n.fr/Favicon/HarryFavicon.ico"
+    />
+    <link rel="stylesheet" href="stylesLeo.css" />
+  </head>
+  <body>
+    <!-- barre de navigation -->
     <nav class="nav-bar">
-        <div class="nav-bar-gauche">
-            <a class="nav-bar-liens" href="#">Ecole</a>
-            <a class="nav-bar-liens" href="#">Campus</a>
-            <a class="nav-bar-liens" href="#">Programme</a>
+      <!-- nav bar gauche -->
+      <div class="nav-bar-gauche">
+        <a class="nav-bar-liens" href="#">Ecole</a>
+        <a class="nav-bar-liens" href="#">Campus</a>
+        <a class="nav-bar-liens" href="#">Programme</a>
+      </div>
+      
+      <!-- logo -->
+      <img
+        class="nav-bar-logo"
+        src="http://y1n.fr/Favicon/HarryFavicon.ico"
+        alt="logo de poudlard"
+      />
+
+      <!-- hamburger -->
+      <div id="nav-bar-hamburger">
+        <div class="nav-bar-cont-lignes btn1">
+          <div class="nav-bar-ligne"></div>
+          <div class="nav-bar-ligne"></div>
+          <div class="nav-bar-ligne"></div>
         </div>
-        <img class="nav-bar-logo" src= "http://y1n.fr/Favicon/HarryFavicon.ico" alt="logo de poudlard">
-        <div class="nav-bar-droite">
-            <a class="nav-bar-liens" href="#">Evenements</a>
-            <a class="nav-bar-liens" href="#">Vie Etudiante</a>
-            <a class="nav-bar-liens" href="#">Info</a>
-        </div>
+      </div>
+      <!-- nav bar droite -->
+      <div class="nav-bar-droite">
+        <a class="nav-bar-liens" href="#">Evenements</a>
+        <a class="nav-bar-liens" href="#">Vie Etudiante</a>
+        <a class="nav-bar-liens" href="#">Info</a>
+      </div>
     </nav>
+
+    <!-- Header -->
     <header class="index-header">
-        <!-- <img class="header-img" src="img/poudlard1.jpg" alt="poudlard"> -->
-        <h1>Bienvenue à Poudlard</h1>
+      <!-- <img class="header-img" src="img/poudlard1.jpg" alt="poudlard"> -->
+      <h1>Bienvenue à Poudlard</h1>
     </header>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
