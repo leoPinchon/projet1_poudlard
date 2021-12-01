@@ -3,11 +3,8 @@
         text-align: center;
     }
 
-    section{        
-    
-        background-color: blue;
-        justify-content: space-around;
-        flex-wrap: nowrap;
+    section{
+        grid-template-columns: 1fr 1fr 1fr;
     }
         
     
@@ -24,18 +21,20 @@ h1{
     text-align: center;
 }
 
+
+
+
+
 section{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: auto;    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
 }
 
 .sousSection{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height:auto;   
     
-    height: auto;
-    width: auto;
 }
-
+*/
