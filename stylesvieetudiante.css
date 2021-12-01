@@ -146,6 +146,8 @@ bgcolor: #444389 (VIOLET)  */
 body {
     margin:0;
     padding: 0;
+    /* background-color: #F7FFF7 */
+    /* background: linear-gradient(90deg, rgba(15,14,14,1) 0%, rgba(113,14,34,1) 100%); */
 }
 
 /* Partie perso de Yan : */
@@ -227,6 +229,8 @@ border-right: 6px solid transparent;
 border-left: 6px solid transparent;
 }
 
+/* Actualité */
+
 #actualite {
 display: flex;
 flex-direction: column;
@@ -244,7 +248,17 @@ padding-top: 20px;
 width: 350px;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 border-radius: 10px;
+background-color: #f1f1f1;
 }
+
+.actu:hover {
+    /* L'image est grossie de 5% */
+    -webkit-transform:scale(1.05); /* Safari et Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* Internet Explorer 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05);
+    }
 
 .actu p:first-child {
     font-weight: bold;
@@ -264,4 +278,40 @@ height : 150px;
 .oldactu1 {
     display: flex;
     justify-content: center;
+}
+
+/* Livre d'or */
+#livredor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectionnav h2 {
+    text-align: center;
+    margin-bottom:15px;
+
+}
+
+#blocklivredor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.livredorwho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.livredor {
+    width: 80%;
+    text-align: justify;
+    margin-top: 40px;
+    border: 1px solid black;
+    
 }

@@ -12,7 +12,7 @@ console.log(menuderoulant)
 actualite.style.display = "block"
 
 li1.addEventListener("click", function(e){ 
-    buttonnav.innerHTML = 'Actualité<span class="fleche"></span>'
+    buttonnav.innerHTML = 'Actualités<span class="fleche"></span>'
     if (actualite.style.display !== "block") {
         livredor.style.display = "none"
         actualite.style.display = "block"
