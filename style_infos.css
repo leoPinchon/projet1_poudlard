@@ -1,40 +1,39 @@
-@media screen and (min-width: 1024px ) {
-    h2{
-        text-align: center;
-    }
+body{
+    margin:0;
+    padding:0;
 
-    section{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-        
-    
-}
+    background-image: url("./assets/fond_infos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-body {
-    background-color: #e1e3e1; 
-    display: flex;
-    flex-direction: column;
-    
-    
 }
 h1{
+    color: #e1e3e1;
     text-align: center;
 }
 
-
-
-
-
-section{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: auto;
+nav{
+    height: 100px;
+    background-color: #23282f;
 }
 
-.sousSection{
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-    height:auto;   
-    
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    opacity: 0.9;
+
+    margin-bottom: 10px;
+    background-color: #23282f;
+    color: #e1e3e1;
 }
-*/
+
+article > div{
+    margin-left: 10px;
+}
+
+.vignette{
+   height: auto;
+    width: 100px;
+}
