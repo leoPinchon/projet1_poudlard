@@ -208,8 +208,60 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .sectionnav {
     display: none;
+}
+
+.fleche {
+color: goldenrod;
+width: 0;
+height: 0;
+margin-left: 10px;
+margin-top: 6px;
+vertical-align: middle;
+border-top: 15px solid;
+border-right: 6px solid transparent;
+border-left: 6px solid transparent;
+}
+
+#actualite {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.actu {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 20px;
+padding-top: 20px;
+width: 350px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 10px;
+}
+
+.actu p:first-child {
+    font-weight: bold;
+}
+
+.actuP {
+    margin: 10px 0;
+    width : 270px;
+    text-align: left;
+}
+
+.actu1Img {
+width : 270px;
+height : 150px;
+}
+
+.oldactu1 {
+    display: flex;
+    justify-content: center;
 }

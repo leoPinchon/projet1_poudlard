@@ -8,10 +8,11 @@ btnNavHamb.addEventListener('click', () => btnNavHamb.classList.toggle('active')
 const menuderoulant = document.getElementById("navbar")
 const wrap = document.getElementById("buttonnav")
 const contenue = document.getElementById("contenuei")
-
+console.log(menuderoulant)
 actualite.style.display = "block"
 
-li1.addEventListener("click", function(){
+li1.addEventListener("click", function(e){ 
+    buttonnav.innerHTML = 'Actualité<span class="fleche"></span>'
     if (actualite.style.display !== "block") {
         livredor.style.display = "none"
         actualite.style.display = "block"
@@ -22,6 +23,7 @@ li1.addEventListener("click", function(){
 })
 
 li2.addEventListener("click", function(){
+    buttonnav.innerHTML = `Livre d'or<span class="fleche"></span>`
     if (livredor.style.display !== "block") {
         livredor.style.display = "block"
         actualite.style.display = "none"
@@ -32,6 +34,7 @@ li2.addEventListener("click", function(){
 })
 
 li3.addEventListener("click", function(){
+    buttonnav.innerHTML = `Plan d'accès à l'école<span class="fleche"></span>`
     if (accesalecole.style.display !== "block") {
         livredor.style.display = "none"
         actualite.style.display = "none"
@@ -42,6 +45,7 @@ li3.addEventListener("click", function(){
 })
 
 li4.addEventListener("click", function(){
+    buttonnav.innerHTML = `Offres d'emploi<span class="fleche"></span>`
     if (offresdemplois.style.display !== "block") {
         livredor.style.display = "none"
         actualite.style.display = "none"
@@ -52,6 +56,7 @@ li4.addEventListener("click", function(){
 })
 
 li5.addEventListener("click", function(){
+    buttonnav.innerHTML = `Reeseaux sociaux<span class="fleche"></span>`
     if (reseauxsociaux.style.display !== "block") {
         livredor.style.display = "none"
         actualite.style.display = "none"
