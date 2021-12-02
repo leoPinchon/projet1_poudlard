@@ -2,8 +2,41 @@
 bgcolor: #23282F (GRIS) 
 bgcolor: #F7FFF7 (BLANC) 
 bgcolor: #E1E3E1 (BEIGE) 
-bgcolor: #444389 (VIOLET) 
+bgcolor: #444389 
 bgcolor: #231e4e */
+
+/*
+background: linear-gradient(to bottom, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Roboto:wght@300;400;900&display=swap');
+
+@font-face {
+  font-family: 'harry_pregular';
+  src: url('font/harryp__-webfont.eot');
+  src: url('font/harryp__-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/harryp__-webfont.woff2') format('woff2'),
+       url('font/harryp__-webfont.woff') format('woff'),
+       url('font/harryp__-webfont.ttf') format('truetype'),
+       url('font/harryp__-webfont.svg#harry_pregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+:root {
+  --main-bg-color: #231e4e; /* (VIOLET)  */
+  --secondary-bg-color: #23282F; /* (GRIS)  */
+  --third-bg-color: #F7FFF7; /* (BLANC)  */
+  --fourth-bg-color: #E1E3E1; /* (BEIGE)  */
+
+  --light-font-color: #f1f1f1;
+  --dark-font-color: #23282F;
+  
+  --title-font-family: 'harry_pregular', serif;
+  --sous-titre-font-family: 'MonteCarlo', cursive;
+  --parag-font-family: 'Roboto', sans-serif;
+}
 
 *,
 ::before,
@@ -15,15 +48,37 @@ bgcolor: #231e4e */
   text-decoration: none;
 }
 
-/***************************** Barre de navigation ***************************************/
+h1{
+  color: var(--light-font-color);
+  font-family: var(--title-font-family);
+  font-size: 5em;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+h2{
+  font-family: var(--sous-titre-font-family);
+  letter-spacing: 1.2px;
+}
+
+p{
+  font-family: var(--parag-font);
+}
+
+a{
+  font-family: var(--parag-font);
+}
+/***************************** BARRE DE NAVIGATION ***************************************/
 
 .nav-bar {
   position: relative;
   width: 100%;
   height: 80px;
   background-color: #23282f;
+  opacity: 0.95;
   border-bottom: #aaa solid 1px;
   z-index: 205;
+  
 }
 
 .nav-bar-gauche {
@@ -41,10 +96,13 @@ bgcolor: #231e4e */
   z-index: 1000;
 }
 
-/* Animation liens de la barre de navigation */
+/*************** ANIMATIONS LIENS DE LA BARRE DE NAVIGATION********/
 .nav-bar-liens {
   display: inline-block;
+ 
 }
+
+
 .nav-bar-liens::after {
   content: "";
   display: block;
@@ -123,6 +181,7 @@ bgcolor: #231e4e */
   position: relative;
   z-index: 200;
   left: -100%;
+  opacity: 0;
   transition: all 0.5s ease;
 }
 
@@ -140,6 +199,7 @@ bgcolor: #231e4e */
   align-items: center;
   padding-left: 70px;
   font-size: 25px;
+  font-family: var(--parag-font-family);
 }
 
 .nav-bar-phone-items a {
@@ -181,8 +241,11 @@ bgcolor: #231e4e */
 
 .phoneVisible {
   left: 0px;
+  opacity: 1;
 }
-
+.phoneScrollStop{
+  position: fixed;
+}
 /* Header Index */
 
 .index-header {
@@ -202,16 +265,14 @@ bgcolor: #231e4e */
   align-items: center;
 }
 
-h1{
-  color: #010101;
-  font-size: 2.5em;
-  font-weight: bold;
-}
+
 
 /*************************    Main   *************************************/
 
 main{
-  background: #231e4e;
+  /* background: linear-gradient(to bottom, #734b6d, #42275a); */
+  background: linear-gradient(to bottom, #41295a, #2f0743); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   
 }
 
@@ -219,6 +280,7 @@ h2{
   text-align: center;
   font-size: 2.5em;
   padding-top: 25px;
+  padding-bottom: 35px; 
 }
 .article-prof{
   display: flex;
@@ -257,6 +319,28 @@ h2{
   margin-bottom: 10px;
 }
 
+
+
+              /* Map */
+.mainBanniere{
+  width: 100%;
+  height: 300px;
+  background: url('img/train2.jpg');
+  background-position: top 10%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBanniere h2{
+  color: var(--light-font-color);
+}
+
+.footer{
+  height: 300px;
+  background-color: #23282f;
+}
 @media screen and (min-width: 850px) {
   /* barre de navigation  */
 
@@ -280,6 +364,7 @@ h2{
     padding: 20px;
     font-size: 20px;
     color: #f7fff7;
+    font-family: var(--parag-font);
   }
 
   .nav-bar-logo {
@@ -295,10 +380,10 @@ h2{
 
 @keyframes do-levitation {
   0% {
-    transform: translate(-40%, -50%);
+    transform: translate(-30%, -50%);
   }
   100% {
-    transform: translate(-66%, -50%);
+    transform: translate(-80%, -50%);
   }
 }
 
