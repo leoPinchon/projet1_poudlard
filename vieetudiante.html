@@ -96,14 +96,22 @@
     </div>
 
         <div id="livredor" class="sectionnav">
-            <h2>Vos avis sur Poudlard</h2>
+            <h2>Ils nous ont laissé un avis : </h2>
             <div id="blocklivredor">
+              <div class="livredor" id="livredorinsert">
+                <p><div id="insertext"></div></p>
+                <div class="livredorwho">
+                  <p id="inserName"></p>
+                  <div id="livredorwho2">
+                    <p id="livredorwho2">Maison : <div id="insertMaison"></div></p>
+                  </div>
+                  </div>  
+              </div>
               <div class="livredor">
                 <p>"5 mois intensifs et sublime entourés de talents à tous les niveaux ! Et la cerise sur le gateau, ils m'ont embauchés, surement grace à mes talents sur css et html"</p>
                 <div class="livredorwho">
-                  <p>Matthias</p>
-                  <p>Maison :Poufsouffle</p>
-                  <p>15/09/2021</p>
+                  <p>Matthias V</p>
+                  <p>Maison : Poufsouffle</p>
                   </div>  
               </div>
               <div class="livredor">
@@ -111,7 +119,6 @@
                 <div class="livredorwho">
                   <p>Harry P</p>
                   <p>Maison : Grifondor</p>
-                  <p>2008-2018</p>
                   </div>
               </div>
               <div class="livredor">
@@ -119,16 +126,36 @@
                 <div class="livredorwho">
                   <p>Camille S</p>
                   <p>Maison : Serdaigle</p>
-                  <p>15/09/2021</p>
                   </div>
+              </div>
+              <div class="livredor">
+                <p>Rajoutez votre avis :</p>
+                  <input type="text" maxlength="200" size="200" placeholder="  Votre avis" id="livredortext"/>
+                  <p>Prenom N :<input type="text" maxlength="10" size="15" placeholder=" Harry P" id="livredortextP"/> </p>
+                  <select name="Maison" class="livredorp" id="livredortextM">
+                    <option value="">Selectionne Ta Maison</option>
+                    <option value="Gryffondor">Gryffondor</option>
+                    <option value="Poufsouffle">Poufsouffle</option>
+                    <option value="Serdaigle">Serdaigle</option>
+                    <option value="Serpentard">Serpentard</option>
+                </select>
+                  <p id="livredorsubmit">Envoyer</p>                
+                </div>
               </div>
               
             </div>
         </div>
 
         <div id="accesalecole" class="sectionnav">
-            <h2>Acces à l'ecole</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum massa quam, sed tristique orci maximus at. Curabitur semper suscipit ligula, eu accumsan elit eleifend nec. Mauris eu viverra ipsum, at elementum nulla. Nullam finibus lorem in metus placerat rhoncus. Vestibulum quis libero sit amet sem vulputate rhoncus. Nulla a nulla rhoncus, rutrum metus eu, condimentum arcu. Sed non neque odio. Mauris scelerisque, sem ac dapibus lobortis, quam massa efficitur velit, et semper neque quam eget magna. In tincidunt vulputate quam at laoreet. Praesent at vehicula purus, pellentesque semper massa. Mauris ac mi euismod, pretium diam ac, condimentum sapien. Praesent erat enim, pulvinar nec malesuada quis, auctor sit amet libero. Duis accumsan nulla a justo condimentum, et semper dolor aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vitae lectus nec sapien tincidunt semper non quis ipsum. Pellentesque vel purus et leo auctor pretium ut ut lorem.</p>
+          <div id="accesalecole2">
+            <div id="actu">
+              <!-- <img src="Assets/accesalecolebackground.jpg" title="Voie 9 3/4" id="actuaccesbg"> -->
+              <p id="hautduaccesecole">1 - Rejoignez la gare de King's Cross</p>
+              <div class="mapouter"><div class="gmap_canvas"><iframe width="270" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=king's%20cross%20london%20gare&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:270px;}</style><a href="https://www.embedgooglemap.net">google maps in website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:270px;}</style></div></div>
+              <p>2 - Direction la voie 9¾</p>
+              <img src="Assets/Accesalecolevoie93-4.jpg" title="Voie 9 3/4" id="actuacces">
+            </div>
+          </div>
         </div>
 
         <div id="offresdemplois" class="sectionnav">

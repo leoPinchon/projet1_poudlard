@@ -2,16 +2,15 @@ const btnNavHamb = document.querySelector('#nav-bar-hamburger')
 
 btnNavHamb.addEventListener('click', () => btnNavHamb.classList.toggle('active'))
 
-
+// Partie de Yan - Debut
 // Yan Menu deroulant mobile
 
 const menuderoulant = document.getElementById("navbar")
 const wrap = document.getElementById("buttonnav")
 const contenue = document.getElementById("contenuei")
-console.log(menuderoulant)
 actualite.style.display = "block"
 
-li1.addEventListener("click", function(e){ 
+li1.addEventListener("click", function(){ 
     buttonnav.innerHTML = 'Actualités<span class="fleche"></span>'
     if (actualite.style.display !== "block") {
         livredor.style.display = "none"
@@ -84,3 +83,20 @@ menuderoulant.addEventListener("click", function(){
         menuderoulant.style.display = "none" 
     }
 })
+
+// livre d'or
+
+const livredorinsert = document.getElementById("livredorinsert")
+const submit = document.getElementById("livredorsubmit")
+
+
+
+submit.addEventListener("click", function() {
+    livredorinsert.style.display = "flex";
+    insertext.innerHTML = `"${livredortext.value}""` 
+    inserName.innerHTML = `${livredortextP.value}`
+    insertMaison.innerHTML = `${livredortextM.value}`
+
+})
+
+// Fin de Partie de Yan

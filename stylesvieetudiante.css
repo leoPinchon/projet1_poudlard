@@ -210,7 +210,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 40px;
+
 }
 
 .sectionnav {
@@ -236,9 +236,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+margin-top: 40px;
 }
 
-.actu {
+.actu, .livredor, {
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -251,7 +252,7 @@ border-radius: 10px;
 background-color: #f1f1f1;
 }
 
-.actu:hover {
+.actu:hover, .livredor:hover {
     /* L'image est grossie de 5% */
     -webkit-transform:scale(1.05); /* Safari et Chrome */
     -moz-transform:scale(1.05); /* Firefox */
@@ -281,11 +282,7 @@ height : 150px;
 }
 
 /* Livre d'or */
-#livredor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 .sectionnav h2 {
     text-align: center;
@@ -305,13 +302,110 @@ height : 150px;
 .livredorwho {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px 0 10px 0;
+    width: 75%;
 }
 
 .livredor {
-    width: 80%;
     text-align: justify;
     margin-top: 40px;
-    border: 1px solid black;
-    
+}
+
+.livredor > p {
+    width: 270px;
+    display: flex;
+}
+
+#livredortext {
+    width: 270px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+#livredortextP {
+    height: 20px;
+    margin-left: 10px;
+}
+
+#livredortextM {
+    height: 20px;
+    margin-top: 10px;;
+    width: 80%;
+}
+
+.livredorp {
+    margin : 10px;
+    height: 70px;
+    width: 200px;
+}
+
+#livredorsubmit {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    text-align: right;
+    width: 70px,;
+    background-color: rgb(212, 211, 211);
+}
+
+#livredorsubmit:hover {
+    background-color: #23282f;
+    color: white;
+}
+
+#livredorinsert {
+    display: none
+}
+
+#livredorwho2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* Plan d'acces à l'ecole */
+
+
+
+#accealecole2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100%
+}
+
+#actu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height : 100vh;
+    margin: 20px;
+    padding-top: 20px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+
+
+#iframegare {
+    width: 300px;
+    height: 300px;
+}
+
+#actuacces {
+    width: 270px;
+    height: 300px;
+}
+
+#actu > p {
+    color: #7E7E7E;
+    font-weight: bold;
 }
