@@ -11,6 +11,28 @@ btnNavHamb.addEventListener('click', () => {
     body.classList.toggle('phoneScrollStop')
 })
 
+// Animation revélation de div  (660px point de rupture)
+const ratio = .1
+const options ={
+    root: null,
+    rootMargin: '300px',
+    threshold: ratio,
+}
+
+const affichage = (entries, observer) => {
+    entries.forEach((entry) => {
+       if (entry.intersectionRatio > ratio){
+           entry.target.classList.add('reveal-visible')
+           observer.unobserve(entry.target)
+       } 
+    })
+}
+const observer = new IntersectionObserver(affichage, options)
+document.querySelectorAll('.reveal-left, .reveal-right').forEach(function(r) {
+    observer.observe(r)
+})
+
+
 
 // Partie de Yan - Debut
 // Yan Menu deroulant mobile
