@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="http://y1n.fr/Favicon/HarryFavicon.ico"/> 
+    <link rel="stylesheet" href="stylesvieetudiante.css">
+    <title>Poudlard | Vie étudiante</title>
+</head>
+<body>
+    <!-- Nav bar haut du site de Léo -->
+    <!-- barre de navigation -->
+    <nav class="nav-bar">
+        <!-- nav bar gauche -->
+        <div class="nav-bar-gauche">
+          <a class="nav-bar-liens" href="#">Ecole</a>
+          <a class="nav-bar-liens" href="#">Campus</a>
+          <a class="nav-bar-liens" href="#">Programme</a>
+        </div>
+        
+        <!-- logo -->
+        <img
+          class="nav-bar-logo"
+          src="http://y1n.fr/Favicon/HarryFavicon.ico"
+          alt="logo de poudlard"
+        />
+  
+        <!-- hamburger -->
+        <div id="nav-bar-hamburger">
+          <div class="nav-bar-cont-lignes btn1">
+            <div class="nav-bar-ligne"></div>
+            <div class="nav-bar-ligne"></div>
+            <div class="nav-bar-ligne"></div>
+          </div>
+        </div>
+        <!-- nav bar droite -->
+        <div class="nav-bar-droite">
+          <a class="nav-bar-liens" href="#">Evenements</a>
+          <a class="nav-bar-liens" href="#">Vie Etudiante</a>
+          <a class="nav-bar-liens" href="#">Info</a>
+        </div>
+      </nav>
+  
+      <!-- Header -->
+      <header class="index-header">    
+      </header>
+
+
+    <!-- Yan - La vie étudiante -->
+
+    <ul id="wrap">
+        <li>
+            <a id="buttonnav" href="#">Sommaire<span class="fleche"></span></a>
+            <ul id="navbar">
+                <li id="li1"><a href="#">Actualités</a></li>
+                <li id="li2"><a href="#">Livre d'or</a></li>
+                <li id="li3"><a href="#">Acces à l'ecole</a></li>
+                <li id="li4"><a href="#">Offre d'emploi</a></li>
+                <li id="li5"><a href="#">Reseaux Sociaux</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div id="contenuei" class="contenueii">
+        <div id="actualite" class="sectionnav">
+            <h2>Actualités</h2>
+            <div class="oldactu1">
+              <div class="actu">
+                <img src="assets/ActuNoel.jpg" title="BlackFriday" class="actu1Img"> 
+                <div class="actuP">
+                  <p>[Noel] Nos evenements pour Noël </p>
+                  <p>Retrouvez tout le personnel pour une soirée enchantée !</p>
+                </div>
+              </div>
+          </div>
+          <div class="oldactu1">
+            <div class="actu">
+              <img src="assets/ActuBlackFriday.png" title="BlackFriday" class="actu1Img"> 
+              <div class="actuP">
+                <p>[Black Friday] Retrouvez toutes les meilleurs promos !</p>
+                <p>Dont 30% sur le Nimbus 2000 avec le code promo "Abdou21".</p>
+              </div>
+            </div>
+        </div>
+        <div class="oldactu1">
+          <div class="actu">
+            <img src="assets/Actuattack.jpg" title="BlackFriday" class="actu1Img"> 
+            <div class="actuP">
+              <p>[Important] Tentative d'attaque de detraqueurs</p>
+              <p>Information à propos de l'attaque.
+              
+              </p>
+            </div>
+          </div>
+      </div>
+        </div>
+    </div>
+
+        <div id="livredor" class="sectionnav">
+            <h2>Ils nous ont laissé un avis : </h2>
+            <div id="blocklivredor">
+              <div class="livredor" id="livredorinsert">
+                <p><div id="insertext"></div></p>
+                <div class="livredorwho">
+                  <p id="inserName"></p>
+                  <div id="livredorwho2">
+                    <p id="livredorwho2">Maison : <div id="insertMaison"></div></p>
+                  </div>
+                  </div>  
+              </div>
+              <div class="livredor">
+                <p>"5 mois intensifs et sublime entourés de talents à tous les niveaux ! Et la cerise sur le gateau, ils m'ont embauchés, surement grace à mes talents sur css et html"</p>
+                <div class="livredorwho">
+                  <p>Matthias V</p>
+                  <p>Maison : Poufsouffle</p>
+                  </div>  
+              </div>
+              <div class="livredor">
+                <p>"10 ans passé ici, et je suis toujours le même, cette celebrité m'a rendu plus fort, je dois tout à Miadil, formateur de l'ombre"</p>
+                <div class="livredorwho">
+                  <p>Harry P</p>
+                  <p>Maison : Grifondor</p>
+                  </div>
+              </div>
+              <div class="livredor">
+                <p>"Bonjour, je passe par là juste pour etre sûr que vous avez signé ce matin, sûrement votre formateur qui à du oublier de vous le rappeler ... à tres vite sur Slack"</p>
+                <div class="livredorwho">
+                  <p>Camille S</p>
+                  <p>Maison : Serdaigle</p>
+                  </div>
+              </div>
+              <div class="livredor">
+                <p>Rajoutez votre avis :</p>
+                  <input type="text" maxlength="200" size="200" placeholder="  Votre avis" id="livredortext"/>
+                  <p>Prenom N :<input type="text" maxlength="10" size="15" placeholder=" Harry P" id="livredortextP"/> </p>
+                  <select name="Maison" class="livredorp" id="livredortextM">
+                    <option value="">Selectionne Ta Maison</option>
+                    <option value="Gryffondor">Gryffondor</option>
+                    <option value="Poufsouffle">Poufsouffle</option>
+                    <option value="Serdaigle">Serdaigle</option>
+                    <option value="Serpentard">Serpentard</option>
+                </select>
+                  <p id="livredorsubmit">Envoyer</p>                
+                </div>
+              </div>
+              
+            </div>
+        </div>
+
+        <div id="accesalecole" class="sectionnav">
+          <div id="accesalecole2">
+            <div id="actu">
+              <!-- <img src="Assets/accesalecolebackground.jpg" title="Voie 9 3/4" id="actuaccesbg"> -->
+              <p id="hautduaccesecole">1 - Rejoignez la gare de King's Cross</p>
+              <div class="mapouter"><div class="gmap_canvas"><iframe width="270" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=king's%20cross%20london%20gare&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:270px;}</style><a href="https://www.embedgooglemap.net">google maps in website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:270px;}</style></div></div>
+              <p>2 - Direction la voie 9¾</p>
+              <img src="Assets/Accesalecolevoie93-4.jpg" title="Voie 9 3/4" id="actuacces">
+            </div>
+          </div>
+        </div>
+
+        <div id="offresdemplois" class="sectionnav">
+            <h2>Offre d'emplois</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum massa quam, sed tristique orci maximus at. Curabitur semper suscipit ligula, eu accumsan elit eleifend nec. Mauris eu viverra ipsum, at elementum nulla. Nullam finibus lorem in metus placerat rhoncus. Vestibulum quis libero sit amet sem vulputate rhoncus. Nulla a nulla rhoncus, rutrum metus eu, condimentum arcu. Sed non neque odio. Mauris scelerisque, sem ac dapibus lobortis, quam massa efficitur velit, et semper neque quam eget magna. In tincidunt vulputate quam at laoreet. Praesent at vehicula purus, pellentesque semper massa. Mauris ac mi euismod, pretium diam ac, condimentum sapien. Praesent erat enim, pulvinar nec malesuada quis, auctor sit amet libero. Duis accumsan nulla a justo condimentum, et semper dolor aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vitae lectus nec sapien tincidunt semper non quis ipsum. Pellentesque vel purus et leo auctor pretium ut ut lorem.</p>
+        </div>
+
+        <div id="reseauxsociaux" class="sectionnav">
+            <h2>Reseaux sociaux</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum massa quam, sed tristique orci maximus at. Curabitur semper suscipit ligula, eu accumsan elit eleifend nec. Mauris eu viverra ipsum, at elementum nulla. Nullam finibus lorem in metus placerat rhoncus. Vestibulum quis libero sit amet sem vulputate rhoncus. Nulla a nulla rhoncus, rutrum metus eu, condimentum arcu. Sed non neque odio. Mauris scelerisque, sem ac dapibus lobortis, quam massa efficitur velit, et semper neque quam eget magna. In tincidunt vulputate quam at laoreet. Praesent at vehicula purus, pellentesque semper massa. Mauris ac mi euismod, pretium diam ac, condimentum sapien. Praesent erat enim, pulvinar nec malesuada quis, auctor sit amet libero. Duis accumsan nulla a justo condimentum, et semper dolor aliquam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vitae lectus nec sapien tincidunt semper non quis ipsum. Pellentesque vel purus et leo auctor pretium ut ut lorem.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
