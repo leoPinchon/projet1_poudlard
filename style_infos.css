@@ -19,11 +19,15 @@ h1{
     color: #e1e3e1;
     text-align: center;
     background-color: #23282f;
-    border-radius: 15 px;
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
     
 }
 h2{
     margin: 0;
+    text-size-adjust: ;
+    font-size: medium;
 }
 nav{
     height: 100px;
@@ -51,10 +55,7 @@ article > div{
     margin-left: 10px;
     margin-right: 10px;
 }
-.desciption{
-    color:;
-    
-}
+
 
 .vignette{
    height: auto;
