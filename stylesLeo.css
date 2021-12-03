@@ -54,6 +54,7 @@ h1{
   font-size: 5em;
   letter-spacing: 5px;
   font-weight: bold;
+  text-align: center;
 }
 
 h2{
@@ -61,8 +62,12 @@ h2{
   letter-spacing: 1.2px;
 }
 
+h3{
+  font-size: 2rem;
+}
 p{
   font-family: var(--parag-font);
+  font-size: 1.2em;
 }
 
 a{
@@ -175,7 +180,7 @@ a{
 
 .nav-bar-phone {
   height: calc(100vh - 80px);
-  min-height: 900px;
+  /* min-height: 900px; */
   width: 100%;
   background-color: #23282f;
   position: relative;
@@ -186,7 +191,7 @@ a{
 }
 
 .nav-bar-phone-liste {
-  padding-top: 200px;
+  padding-top: 35px;
   width: 100%;
   height: 100%;
 }
@@ -245,13 +250,14 @@ a{
 }
 .phoneScrollStop{
   position: fixed;
+  width: 100%;
 }
 /* Header Index */
 
 .index-header {
   position: absolute;
   top: 80px;
-  width: 100%;
+  width: 101%;
   height: calc(100vh - 80px);
   background: linear-gradient(
       180deg,
@@ -276,17 +282,21 @@ a{
   
 
 
+
+/* Temoignages  */
 h2{
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   padding-top: 25px;
   padding-bottom: 35px; 
 }
+
+
 .article-prof{
   display: flex;
-  margin:  auto;
+  margin: 0 auto;
   align-items: center;
-  width: 70%;
+  width: 80%;
   padding-top: 25px;
   padding-bottom: 30px;
 }
@@ -297,17 +307,10 @@ h2{
   margin-right: 20px;
 }
 
-.article-prof-div{
-  width: 70%;
-}
 
-.article-prof h3{
-  font-size: 2rem;
-  /* padding-bottom: 2px; */
-}
 
 .article-prof h4{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-bottom: 5px;
 }
 .article-prof h3::before{
@@ -319,14 +322,39 @@ h2{
   margin-bottom: 10px;
 }
 
+.article-prof p{
+  margin-bottom: 5px;
+ }
 
+.article-prof a{
+  color: #c89446;
+  
+}
 
-              /* Map */
+/* Animation reveal */
+.reveal-left{
+  opacity: 0;
+  transform: translate(-500px);
+}
+
+.reveal-right{
+  opacity: 0;
+  transform: translate(500px);
+}
+
+.reveal-visible{
+  opacity:1;
+  transform: translateY(0);
+  transition: 1s ease-out;
+}
+
+              /* BANNIERE */
 .mainBanniere{
   width: 100%;
   height: 300px;
-  background: url('img/train2.jpg');
-  background-position: top 10%;
+  background: url('img/magie.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -337,6 +365,29 @@ h2{
   color: var(--light-font-color);
 }
 
+
+/* FORMATION */
+
+.main-formation-article{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 35px 0 35px; 
+}
+
+.main-formation-article h3{
+  margin-bottom: 10px;
+}
+
+.main-formation-article p{
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.main-formation-article a{
+  color: #c89446;
+}
 .footer{
   height: 300px;
   background-color: #23282f;
@@ -375,6 +426,12 @@ h2{
     transform: translate(-50%, -50%);
   }
 
+  .mainBloc{
+    position: absolute;
+    top: calc(100vh);
+    width: 100%;
+    /* height: calc(100vh - 80px); */
+  }
   
 /* Animation lévitatiton */
 

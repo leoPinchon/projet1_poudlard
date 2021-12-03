@@ -13,25 +13,28 @@ body{
     margin:0;
     padding:0;
 
-    background-image: url("./assets/fond_infos.jpg");
+    background-image: url("./assets_Infos/fond_infos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
 }
 
-h1{
+.titre{
     color: #e1e3e1;
     text-align: center;
     background-color: #23282f;
     border-radius: 15px;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    height: 60px;
+    padding:0px;
     
 }
-h2{
+h3{
     margin: 0;
-    text-size-adjust: ;
     font-size: medium;
 }
 nav{
