@@ -1,145 +1,4 @@
 
-/* Partie de léo */
-
-/* Couleurs principales
-bgcolor: #23282F (GRIS) 
-bgcolor: #F7FFF7 (BLANC) 
-bgcolor: #E1E3E1 (BEIGE) 
-bgcolor: #444389 (VIOLET)  */
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Barre de navigation */
-
-.nav-bar {
-  position: relative;
-  width: 100%;
-  height: 80px;
-  background-color: #23282f;
-  
-}
-
-.nav-bar-gauche{
-    display:none;
-}
-.nav-bar-droite{
-    display:none;
-}
-
-.nav-bar-logo{
-    position: absolute;
-    width: 39px;
-    top:25px;
-    left:35px;
-    z-index: 1000;
-}
-
-/* Menu Hamburger */
-
-#nav-bar-hamburger {
-    height: 35px;
-    width: 39px;
-    /* background: salmon; */
-    position: absolute;
-    top:29px;
-    right:35px;
-    z-index: 10000;
-  }
-  
-  .nav-bar-cont-lignes{
-      width: 100%;
-      height: 39px;
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-  }
-  
-  .nav-bar-ligne{
-      width: 100%;
-      height: 6px;
-      border-radius: 5px;
-      background-color: goldenrod;
-      position: absolute;
-      transition: all 0.5s ease-in-out;
-  }
-  
-  .nav-bar-ligne:nth-child(1){
-      top: 0px;
-  }
-  .nav-bar-ligne:nth-child(2){
-      top: 13px;
-  }
-  .nav-bar-ligne:nth-child(3){
-      top: 26px;
-  }
-  
- #nav-bar-hamburger.active .nav-bar-ligne:nth-child(1){
-      top: 13px;
-      transform: rotate(135deg);
-  }
-  #nav-bar-hamburger.active .nav-bar-ligne:nth-child(2){
-      opacity: 0;
-      transform: translateX(-20px);
-  }
-  #nav-bar-hamburger.active .nav-bar-ligne:nth-child(3){
-      top: 13px;
-      transform: rotate(-135deg);
-  }
-
-
-@media screen and (min-width: 850px) {
-
-
-  /* barre de navigation  */
-
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-  }
-
-  .nav-bar-gauche{
-    display:block;
-}
-.nav-bar-droite{
-    display:block;
-}
-
-  .nav-bar-liens {
-    text-decoration: none;
-    padding: 20px;
-    font-size: 20px;
-    color: #f7fff7;
-  }
-
-  .nav-bar-logo {
-    position: absolute;
-    width: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  #nav-bar-hamburger  {
-   display: none;
-  }
-
-  /* Header  */
-}
-
-
-
-
 
 /* YAN | Vie etudiante | Ne rien modifier */
 /* YAN | Mobile First */
@@ -148,6 +7,26 @@ body {
     padding: 0;
     /* background-color: #F7FFF7 */
     /* background: linear-gradient(90deg, rgba(15,14,14,1) 0%, rgba(113,14,34,1) 100%); */
+}
+
+:root {
+    --main-bg-color: #231e4e; /* (VIOLET)  */
+    --secondary-bg-color: #23282F; /* (GRIS)  */
+    --third-bg-color: #F7FFF7; /* (BLANC)  */
+    --fourth-bg-color: #E1E3E1; /* (BEIGE)  */
+  
+    --light-font-color: #f1f1f1;
+    --dark-font-color: #23282F;
+    
+    --title-font-family: 'harry_pregular', serif;
+    --sous-titre-font-family: 'MonteCarlo', cursive;
+    --parag-font-family: 'Roboto', sans-serif;
+  }
+
+header {
+    
+height: 80px;
+
 }
 
 /* Partie perso de Yan : */
@@ -192,7 +71,12 @@ body {
     position: absolute;
     top: 80px;
     width: 100%;
-    padding: 0
+    padding: 0;
+    font-family: var(--parag-font-family)
+}
+
+#buttonnav {
+    font-family: var(--parag-font-family)
 }
 
 
@@ -236,7 +120,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-margin-top: 40px;
 }
 
 .actu, .livredor {
@@ -244,13 +127,17 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin: 20px;
 padding-top: 20px;
 width: 350px;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 border-radius: 10px;
 background-color: #f1f1f1;
+font-family: var(--parag-font-family);
+color: var(--dark-font-color);
 }
+
+
+
 
 .actu:hover, .livredor:hover {
     /* L'image est grossie de 5% */
@@ -269,16 +156,24 @@ background-color: #f1f1f1;
     margin: 10px 0;
     width : 270px;
     text-align: left;
+    font-family: var(--parag-font-family);
 }
 
 .actu1Img {
 width : 270px;
 height : 150px;
+border-radius: 5px;
 }
 
 .oldactu1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px
+}
+
+.actualiteh2 {
+    padding: 0;
+    margin: 0
 }
 
 /* Livre d'or */
@@ -305,11 +200,13 @@ height : 150px;
     justify-content: space-between;
     margin: 20px 0 10px 0;
     width: 75%;
+    font-weight: bold;
 }
 
 .livredor {
     text-align: justify;
     margin-top: 40px;
+    font-style: italic;
 }
 
 .livredor > p {
@@ -321,17 +218,20 @@ height : 150px;
     width: 270px;
     height: 30px;
     margin: 10px 0;
+    border-radius: 6px;
 }
 
 #livredortextP {
     height: 20px;
     margin-left: 10px;
+    border-radius: 6px;
 }
 
 #livredortextM {
     height: 20px;
     margin-top: 10px;;
     width: 80%;
+    border-radius: 6px;
 }
 
 .livredorp {
@@ -348,6 +248,7 @@ height : 150px;
     text-align: right;
     width: 70px,;
     background-color: rgb(212, 211, 211);
+    
 }
 
 #livredorsubmit:hover {
@@ -356,7 +257,8 @@ height : 150px;
 }
 
 #livredorinsert {
-    display: none
+    display: none;
+    margin-top: 20px
 }
 
 #livredorwho2 {
@@ -367,7 +269,16 @@ height : 150px;
 
 /* Plan d'acces à l'ecole */
 
+#hautduaccesecole, #hautduaccesecole2 {
+    margin-bottom: 20px;
+    font-family: var(--parag-font-family);
+    font-weight: bold;
+    text-align: center;
+}
 
+#where1, #where2 {
+    margin: 20px 0;
+}
 
 #accealecole2 {
     display: flex;
@@ -381,18 +292,22 @@ height : 150px;
 #actu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height : 100vh;
     margin: 20px;
-    padding-top: 20px;
     width: 300px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     background-color: #f1f1f1;
 }
 
+#actu2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #iframegare {
@@ -403,9 +318,110 @@ height : 150px;
 #actuacces {
     width: 270px;
     height: 300px;
+    margin-bottom: 20px;
+}
+
+#actuacces, .gmap_canvas {
+    border-radius: 10px;;
 }
 
 #actu > p {
     color: #7E7E7E;
     font-weight: bold;
+    margin: 30px;
+}
+
+.actualiteh2 {
+    margin: 0;
+}
+
+/* *************  Recherche d'emploi ********* */
+/* Box shadow recup sur actualité */
+
+.actuEmploi {
+    height: 200px
+}
+.actuP0 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+        
+.actuP1 { grid-area: 1 / 1 / 2 / 2; }
+.actuP2 { grid-area: 1 / 3 / 2 / 4; }
+.actuP3 { grid-area: 2 / 1 / 3 / 3; }
+.actuP4 { grid-area: 3 / 1 / 4 / 2; }
+
+
+/* *************  Reseau sociaux ********* */
+
+#actupReseauxSociaux {
+    text-align: center;
+}
+
+/* *************  Desktop ********* */
+
+@media screen and (min-width: 850px) {
+
+    body {
+        cursor : default;
+    }
+
+    #blockactu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:  space-around;
+        margin-top: 20px;
+    }
+
+    .actu { 
+        margin: 0 30px;
+    }
+
+    #blocklivredor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .livredor { 
+        width: 320px;
+        height: 270px;
+        margin: 20px;
+
+    }
+
+    #actu {
+        background-color: #ffff;
+        box-shadow: none;
+        }
+    
+    #wherePrincipal {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        justify-content: space-around;
+    }
+
+    #where1, #where2 {
+        margin: 0 40px;
+    }
+
+    #hautduaccesecole, #hautduaccesecole2 {
+        margin-bottom: 20px;
+    }
+
+    #blockactu, #blockemplois {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:  space-around;
+        margin-top: 20px;
+    }
+
 }
