@@ -5,20 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_infos.css">
+    <link rel="stylesheet" href="stylesLeo.css" />
     <title>Informations Utiles</title>
 </head>
 <body>
-    <nav>
+    <!-- barre de navigation -->
+    <nav class="nav-bar">
+      <!-- nav bar gauche -->
+      <ul class="nav-bar-gauche">
+        <li class="nav-bar-liens"><a href="#">Ecole</a></li>
+        <li class="nav-bar-liens"><a href="#">Campus</a></li>
+        <li class="nav-bar-liens"><a href="#">Programme</a></li>
+      </ul>
 
+      <!-- logo -->
+      <img
+        class="nav-bar-logo levitate"
+        src="http://y1n.fr/Favicon/HarryFavicon.ico"
+        alt="logo de poudlard"
+      />
+
+      <!-- hamburger -->
+      <div id="nav-bar-hamburger">
+        <div class="nav-bar-cont-lignes btn1">
+          <div class="nav-bar-ligne"></div>
+          <div class="nav-bar-ligne"></div>
+          <div class="nav-bar-ligne"></div>
+        </div>
+      </div>
+      <!-- nav bar droite -->
+      <ul class="nav-bar-droite">
+        <li class="nav-bar-liens"><a href="#">Evenements</a></li>
+        <li class="nav-bar-liens"><a href="#">Vie Etudiante</a></li>
+        <li class="nav-bar-liens"><a href="#">Info</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Informations Utiles</h1>
+    <!-- Menu telephone -->
+    <nav class="nav-bar-phone">
+      <ul class="nav-bar-phone-liste">
+        <li class="nav-bar-phone-items"><a href="#">Home</a></li>
+        <li class="nav-bar-phone-items"><a href="#">Ecole</a></li>
+        <li class="nav-bar-phone-items"><a href="#">Campus</a></li>
+        <li class="nav-bar-phone-items"><a href="#">Programme</a></li>
+        <li class="nav-bar-phone-items"><a href="#">Evenements</a></li>
+        <li class="nav-bar-phone-items"><a href="#">Vie étudiante</a></li>
+        <li class="nav-bar-phone-items"><a href="#">Info</a></li>
+      </ul>
+    </nav>
+    <main class="contenuInfos">
+      <h2>Informations Utiles</h2>
       <div class="contenant">
           <section>
                 <article>
                   <img class="vignette" src="./assets/ollivander.jpeg" alt="ollivander">
                   <div>
-                    <h2>Ou trouver sa baguettes ?</h2>
+                    <h3>Ou trouver sa baguettes ?</h3>
                     <p class="desciption">Vous pouvez faire un tour du côté de chez Ollivander</p>
                   </div>
                 </article>
@@ -27,7 +68,7 @@
               <article>
                 <img class="vignette" src="./assets/Obscurus Books.jpg" alt="Obscurus">
                 <div>
-                  <h2>Ou trouver ses livres ?</h2>
+                  <h3>Ou trouver ses livres ?</h3>
                   <p class="desciption">Passez pas Obscurus Book, les livres les plus rechercher et rare s'y trouvent.</p>
                 </div>
               </article>
@@ -36,19 +77,19 @@
             <article>
               <img class="vignette" src="./assets/boutique_balais.jpeg" alt="boutique de balais">
               <div>
-                <h2>Ou trouver son balais</h2>
+                <h3>Ou trouver son balais</h3>
                 <p class="desciption">Allez voir la boutique d'article de quidditch, vous trouvez aussi des balais de compétition.</p>
               </div>
             </article>
           </section>
       </div>
-    <h1>A découvrir</h1>
+    <h2>A découvrir</h2>
       <div class="contenant"> 
         <section>
               <article>
                 <img class="vignette" src="./assets/ollivander.jpeg" alt="ollivander">
                 <div>
-                  <h2>Le bar a cuda</h2>
+                  <h3>Le bar a cuda</h3>
                   <p class="desciption">Une grande soif, pas de problème ici vous ne repartez pas sans voir double</p>
                 </div>
               </article>
@@ -57,7 +98,7 @@
             <article>
               <img class="vignette" src="./assets/Obscurus Books.jpg" alt="Obscurus">
               <div>
-                <h2>Discothèque</h2>
+                <h3>Discothèque</h3>
                 <p class="desciption">Dansez jusqu'a pas d'heures ici, attention aux oreilles le son est plutôt fort !</p>
               </div>
             </article>
@@ -66,13 +107,13 @@
           <article>
             <img class="vignette" src="./assets/boutique_balais.jpeg" alt="boutique de balais">
             <div>
-              <h2>Le park</h2>
+              <h3>Le park</h3>
               <p class="desciption">Pour faire des heures de ballade, courrir un peu ou se détendre avec les oiseaux!</p>
             </div>
           </article>
       </section>
     </div>
-    <h1>FAQ</h1>
+    <h2>FAQ</h2>
     <section class="faq">
       <details>
         <summary>Question 1</summary>

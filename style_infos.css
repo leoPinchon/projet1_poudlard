@@ -1,3 +1,7 @@
+.contenantInfos{
+    position: absolute;
+    top: 80px;
+}
 @media  screen and (min-width = 1024px) {
     .contenant{
         flex-direction: row;
@@ -15,6 +19,7 @@ body{
     background-attachment: fixed;
 
 }
+
 h1{
     color: #e1e3e1;
     text-align: center;
